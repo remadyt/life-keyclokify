@@ -1,0 +1,340 @@
+/* Disabled */
+
+.input,
+.unstyledButton,
+.selectWrapper,
+.actionIcon {
+  &[data-disabled] {
+    cursor: initial;
+  }
+}
+
+/* Text */
+
+.text {
+  --text-color: var(--color-black-1);
+}
+
+/* Divider */
+
+.divider {
+  --divider-color: var(--color-gray-3);
+}
+
+/* Button */
+
+.unstyledButton {
+  font-size: var(--mantine-font-size-sm);
+}
+
+/* Tabs */
+
+.tabsList button {
+  --tabs-color: var(--color-primary);
+
+  padding: 8px 0;
+}
+
+.tabsList {
+  column-gap: 24px;
+}
+
+.tabsList button:hover {
+  background-color: transparent;
+  color: var(--color-black-1);
+}
+
+.tabsList::before {
+  border-color: var(--color-gray-3);
+}
+
+/* Input */
+
+.input {
+  line-height: 18px;
+  border-color: var(--color-gray-3);
+  color: var(--color-black-1);
+}
+
+.input[data-error='true'] {
+  border: var(--border-color-error);
+}
+
+.input:hover,
+input:focus {
+  border-color: var(--color-blue-2);
+}
+
+.input::placeholder {
+  color: var(--color-gray-1);
+}
+
+.input:disabled {
+  opacity: 1;
+  background-color: var(--color-gray-6);
+}
+
+.inputWrapperLabel {
+  font-weight: 400;
+  font-size: var(--mantine-font-size-sm);
+}
+
+.inputWrapper {
+  --input-height-sm: 32px;
+}
+
+.inputLabel {
+  color: var(--color-black-1);
+  font-weight: 400;
+}
+
+/* ScrollArea */
+
+.scrollbar[data-orientation='vertical'] .thumb {
+  background-color: var(--color-gray-3);
+}
+
+/* Tooltip */
+
+.tooltip {
+  --tooltip-bg: var(--color-blue-1);
+
+  padding: 8px 16px;
+  max-width: 300px;
+}
+
+/* Dropzone */
+
+.dropzone {
+  --dropzone-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-gray-5);
+  border-color: var(--color-gray-3);
+  border-width: 1px;
+  padding: 0;
+
+  &[data-accept] {
+    background-color: var(--color-gray-4);
+  }
+}
+
+.dropzoneInner {
+  color: var(--color-gray);
+}
+
+/* Combobox */
+
+.option {
+  display: flex;
+  color: var(--color-black-1);
+  line-height: 18px;
+  padding: 5px 12px;
+  border-radius: 0;
+}
+
+.dropdown {
+  padding: 3px 0;
+}
+
+/* Menu && Combobox */
+
+.itemLabel {
+  display: flex;
+  align-items: center;
+}
+
+.menuItem,
+.option {
+  min-height: 30px;
+}
+
+.menuItem:hover,
+.option:hover {
+  background-color: var(--color-gray-4);
+}
+
+.menuDropdown {
+  padding: 0;
+  border: var(--border-solid-gray-3);
+  overflow: hidden;
+}
+
+/* DatePickerInput */
+
+.monthCell button[data-selected] {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.monthCell button:focus {
+  border: none;
+}
+
+.inputDatePicker {
+  color: var(--color-black-1);
+}
+
+.inputDatePicker span {
+  color: var(--color-gray-1);
+}
+
+.day {
+  color: var(--color-black-1);
+}
+
+/* RichTextEditor */
+
+.rteRoot {
+  border: none;
+}
+
+.rteToolbar {
+  border: var(--border-solid-gray-3);
+  border-bottom: none;
+  padding: 10px;
+  gap: 8px;
+}
+
+.rteControl {
+  color: var(--color-gray);
+  border: var(--border-solid-gray-3);
+}
+
+.rteControl[data-active] {
+  background-color: var(--color-blue-4);
+  color: var(--color-primary);
+}
+
+.rteControl:hover {
+  background-color: var(--color-gray-4);
+  color: var(--color-gray);
+}
+
+.rteContent p[data-placeholder]::before {
+  --mantine-color-placeholder: var(--color-gray-1);
+}
+
+.linkEditorSave {
+  --button-height-sm: 32px;
+}
+
+/* Select */
+
+.selectInput {
+  width: fit-content;
+}
+
+.selectWrapper {
+  border-radius: var(--mantine-radius-default);
+}
+
+.selectDropdown {
+  max-height: 240px;
+}
+
+/* Textarea */
+
+.textarea {
+  border: var(--border-solid-gray-3);
+}
+
+.textarea:focus {
+  border-color: var(--color-gray-3);
+}
+
+.labelTextarea {
+  color: var(--color-black-1);
+}
+
+/* Modal */
+
+.modalBody {
+  padding: 0;
+  border: none;
+}
+
+.modalContent {
+  border: var(--border-solid-gray-3);
+}
+
+.modalHeader {
+  max-height: 55px;
+  min-height: 55px;
+  height: 55px;
+  padding: 16px 20px 12px;
+}
+
+.modalInner {
+  align-items: center;
+}
+
+/* ActionIcon */
+
+.actionIcon[data-variant='outline'] {
+  background-color: var(--color-white);
+  border: var(--border-solid-gray-3);
+  padding: 6px;
+  width: 30px;
+  height: 30px;
+  margin: 0 6px;
+}
+
+.actionIcon[data-variant='outline']:hover {
+  background-color: var(--color-gray-3);
+}
+
+.actionIcon[data-variant='filled'] {
+  background-color: var(--color-gray-4);
+  padding: 6px;
+  width: 30px;
+  height: 30px;
+  margin: 0 6px;
+}
+
+.actionIcon[data-variant='filled']:hover {
+  background-color: var(--color-blue-4);
+}
+
+/* Anchor */
+
+.anchor {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+/* ShowNotification */
+
+.notification {
+  background-color: var(--color-white);
+  margin: 0;
+  border: var(--color-gray-3);
+}
+
+.notification > div {
+  background: transparent;
+  margin-right: 6px;
+  color: var(--color-black);
+}
+
+.pillRoot {
+  background-color: var(--color-gray-4);
+  border-radius: 6px;
+}
+
+.pillRemoveIcon {
+  color: var(--color-gray);
+}
+
+/* Table */
+
+.tableTr {
+  border-bottom: var(--border-solid-gray-4);
+  height: 42px;
+}
+
+.tableTh {
+  font-weight: 500;
+}

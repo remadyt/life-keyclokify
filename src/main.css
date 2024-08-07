@@ -1,0 +1,77 @@
+:root {
+  /* Sizes */
+  --mantine-radius-default: 8px;
+  --mantine-radius-secondary: 4px;
+  --header-h: 44px;
+  --sub-header-h: 61px;
+  --table-row-h: 42px;
+  --navbar-collapsed-w: 56px;
+  --navbar-w: 200px;
+  --menu-h: 53px;
+  --footer-h: 146px;
+  --page-controls-h: 64px;
+  --filters-h: 42px;
+  --wrapper-p: 12px;
+  --description-panel-tab-h: 44px;
+  --common-table-footer-h: 40px;
+
+  /* Colors */
+  --color-primary: #002395;
+  --color-secondary: #6b6b75;
+  --color-error: #ff543c;
+  --color-success: #219653;
+  --color-notification: #ff8933;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-black-1: #3a3a41;
+  --color-gray: #506271;
+  --color-gray-1: #8a91b1;
+  --color-gray-2: #cdd1df;
+  --color-gray-3: #e8edf8;
+  --color-gray-4: #f3f7fd;
+  --color-gray-5: #fbfcfe;
+  --color-gray-6: #f8fafb;
+  --color-gray-7: #f1f3f9;
+  --color-gray-8: #ebebeb;
+  --color-blue: #001c77;
+  --color-blue-1: #5d6da0;
+  --color-blue-2: #7390ee;
+  --color-blue-3: #d2ddff;
+  --color-blue-4: #e6ecfd;
+  --color-blue-5: #eaeffe;
+  --color-blue-6: #d6eafe;
+  --color-red: #f5e0ef;
+
+  /* Fonts */
+  --text-fz: var(--mantine-font-size-sm);
+  --input-label-size: var(--mantine-font-size-sm);
+
+  /* Border */
+  --border-solid-blue-2: 1px solid var(--color-blue-2);
+  --border-solid-blue-3: 1px solid var(--color-blue-3);
+  --border-solid-gray-4: 1px solid var(--color-gray-4);
+  --border-2-solid-gray-4: 2px solid var(--color-gray-4);
+  --border-solid-gray-3: 1px solid var(--color-gray-3);
+  --border-dased-gray-3: 1px dashed var(--color-gray-3);
+  --border-color-error: 1px solid var(--color-error);
+  --border-solid-white: 1px solid var(--color-white);
+
+  /* Box Shadow */
+  --box-shadow-sm: 0 4px 6px 0 rgb(138 145 177 / 10%);
+}
+
+.login-page-left-section {
+  background: linear-gradient(0deg, rgb(0 35 149 / 85%), rgb(0 35 149 / 85%)),
+  url('../assets/bgImgLogoScreen.png');
+  background-size: cover;
+}
+
+
+.login-page-left-section svg path {
+  fill: var(--color-white);
+}
+
+.login-page-left-section svg {
+  width: 190px;
+  height: 100px;
+}
